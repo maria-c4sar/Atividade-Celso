@@ -8,10 +8,10 @@
 </head>
 <body>
      <div class="princi">
-        
+
         <p>Cadastro de Produtos</p>
         
-        <form id="Produto">
+        <form action="/cadastrar" method="POST" id="Produto">
             <div class="tabel">
                 <label for="nome">Nome do Produto:</label>
                 <input type="text" id="nomeProd" name="nomeProd" required>
@@ -25,11 +25,6 @@
             <div class="tabel">
                 <label for="quant">Quantidade:</label>
                 <input type="number" id="quantidade" name="quantidade" min="1" required>
-            </div>
-
-            <div class="tabel">
-                <label for="data">Data da Compra:</label>
-                <input type="date" id="dataCompra" name="dataCompra" required>
             </div>
 
             <button type="submit" class="btn-cadastrar">Cadastrar Produto</button>
