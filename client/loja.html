@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="princi">
+        
+        <p>Cadastro de Produtos</p>
+        
+        <form id="Produto">
+            <div class="tabel">
+                <label for="nome">Nome do Produto:</label>
+                <input type="text" id="nomeProd" name="nomeProd" required>
+            </div>
+
+            <div class="tabel">
+                <label for="compra">Preço de Compra:</label>
+                <input type="number" id="precoCompra" name="precoCompra" step="0.01" min="0" required>
+            </div>
+
+            <div class="tabel">
+                <label for="quant">Quantidade:</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" required>
+            </div>
+
+            <div class="tabel">
+                <label for="data">Data da Compra:</label>
+                <input type="date" id="dataCompra" name="dataCompra" required>
+            </div>
+
+            <button type="submit" class="btn-cadastrar">Cadastrar Produto</button>
+        </form>
+
+    </div>
+    </div>
+</body>
+</html>

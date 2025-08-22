@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #d8c1c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.princi {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 4vw;
+    border-radius: 2vw;
+    box-shadow: 0 2vw 4vw rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1vw);
+}
+
+.princi p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3vw;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.tabel {
+    margin-bottom: 2.5vw;
+}
+
+.tabel label {
+    display: block;
+    margin-bottom: 0.8vw;
+    color: #555;
+    font-weight: 500;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 1.5vw;
+    border: 0.2vw solid #e1e1e1;
+    border-radius: 1.2vw;
+    font-size: 1.6vw;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    outline: none;
+    border-color: #667eea;
+    transform: translateY(-0.2vw);
+    box-shadow: 0 0.5vw 1.5vw rgba(102, 126, 234, 0.2);
+}
+
+.btn-cadastrar {
+    width: 100%;
+    padding: 1.8vw;
+    background: #721c24;
+    color: white;
+    border: none;
+    border-radius: 1.2vw;
+    font-size: 1.8vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+}
+
+.btn-cadastrar:hover {
+    transform: translateY(-0.3vw);
+    box-shadow: 0 1vw 2.5vw rgba(102, 126, 234, 0.3);
+}
+
+.btn-cadastrar:active {
+    transform: translateY(-0.1vw);
+}
+
+#mensagem {
+    margin-top: 2vw;
+    padding: 1.5vw;
+    border-radius: 1.2vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6vw;
+    display: none;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    border: 0.2vw solid #c3e6cb;
+    color: #155724;
+}
+
+.erro {
+    background-color: #f8d7da;
+    border: 0.2vw solid #f5c6cb;
+    color: #721c24;
+}
