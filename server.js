@@ -1,6 +1,6 @@
 import express from "express";
 
-import sql2 from "mysql2";
+import sql2 from "mysql2";;;;
 
 import path from "path";
 
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.post("/cadastrar", (req, res) => {
-    
+
 })
 
 app.listen(3001, () => {
