@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar Produto</title>
+    <link rel="stylesheet" href="sty-del.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="princi">
+        <p>Deletar Produto</p>
+        
+        <div class="avisinho">
+            Esta ação não pode ser desfeita!
+        </div>
+        
+        <form action="/deleti" method="POST" id="deleteP">
+            <div class="tabel">
+                <label for="idProduto">ID do Produto:</label>
+                <input type="text" id="idProduto" name="idProduto" min="1" required placeholder="Digite o ID do produto">
+            </div>
+
+            <button type="submit" class="btn-deletar">Deletar Produto</button>
+        </form>
+
+        <div id="mensagem"></div>
+    </div>
+</body>
+</html>

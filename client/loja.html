@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
     <link rel="stylesheet" href="style.css">
+    <title>Loja</title>
 </head>
 <body>
-     <div class="princi">
-
+    <div class="princi">
         <p>Cadastro de Produtos</p>
         
         <form action="/cadastrar" method="POST" id="Produto">
@@ -27,10 +26,11 @@
                 <input type="number" id="quantidade" name="quantidade" min="1" required>
             </div>
 
-            <button type="submit" class="btn-cadastrar">Cadastrar Produto</button>
+            <div class="botoes-container">
+                <button type="submit" class="btn-cadastrar">Cadastrar Produto</button>
+                <a href="deletar.html" class="btn-cadastrar">Deletar Produto</a>
+            </div>
         </form>
-
-    </div>
     </div>
 </body>
 </html>

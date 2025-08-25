@@ -32,10 +32,27 @@ app.post("/cadastrar", (req, res) => {
             console.error('Erro ao inserir dados: ', err);
             return res.status(500).send('Erro ao inserir dados.')
         }
-
-        res.redirect('/')
+        res.redirect('/');
     });
 })
+
+app.post('/deleti', (req, res) => {
+
+    const { idProduto } = req.body;
+
+    const sql = "DELETE FROM produtos WHERE id = ?"
+
+    dados.query(sql, [idProduto], (err, result) => {
+        if (err) throw err;
+        if (result.affectedRows > 0){
+            console.log(`Produto com ID: ${idProduto} deletado com sucesso!`, result);
+        }else{
+            res.status(404).send('Produto não encontrado.', result);
+        }
+        res.redirect('/')
+    })
+
+});
 
 app.listen(3001, () => {
     console.log(`Server running on http://localhost:3001`)
